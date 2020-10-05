@@ -1,0 +1,52 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NetworkLayerFramework
+import Foundation
+@_exported import NetworkLayerFramework
+import Swift
+@frozen public enum Result<T> {
+  case success(T)
+  case failure(NetworkLayerFramework.NetworkingError)
+}
+@frozen public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case delete
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum NetworkingError : Swift.Error {
+  case domainError(description: Swift.String, errorCode: Swift.Int)
+  case invalidResponse
+  case invalidJSON
+}
+extension NetworkingError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var errorCode: Swift.Int? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class NetworkManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+  public func executeRequest<T>(_ request: NetworkLayerFramework.RequestProtocol, completion: @escaping (NetworkLayerFramework.Result<T>) -> Swift.Void) where T : Swift.Decodable
+}
+public protocol RequestProtocol {
+  var url: Foundation.URL { get }
+  var httpMethod: NetworkLayerFramework.HTTPMethod { get set }
+  var params: [Swift.String : Any]? { get set }
+  var timeoutInterval: Foundation.TimeInterval { get set }
+  var headers: [Swift.String : Swift.String]? { get set }
+  var cachePolicy: Foundation.URLRequest.CachePolicy { get set }
+  init(url: Foundation.URL, httpMethod: NetworkLayerFramework.HTTPMethod, cachePolicy: Foundation.URLRequest.CachePolicy, timeoutInterval: Foundation.TimeInterval)
+  func makeRequest() -> Foundation.URLRequest
+}
+extension NetworkLayerFramework.HTTPMethod : Swift.Equatable {}
+extension NetworkLayerFramework.HTTPMethod : Swift.Hashable {}
+extension NetworkLayerFramework.HTTPMethod : Swift.RawRepresentable {}

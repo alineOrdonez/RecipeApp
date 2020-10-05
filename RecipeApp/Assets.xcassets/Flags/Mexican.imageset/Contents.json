@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Mexican.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
