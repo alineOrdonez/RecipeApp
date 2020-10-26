@@ -29,11 +29,11 @@
 		D7145AFB2525D1970082A31F /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145AFA2525D1970082A31F /* MealViewModel.swift */; };
 		D7145B002525D21F0082A31F /* RecipeVieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145AFF2525D21F0082A31F /* RecipeVieModel.swift */; };
 		D7145B122525D54B0082A31F /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145B112525D54B0082A31F /* RoundedView.swift */; };
-		D7145B1A2525D6460082A31F /* ImageLoader in Frameworks */ = {isa = PBXBuildFile; productRef = D7145B192525D6460082A31F /* ImageLoader */; };
 		D7145B2A2525DE340082A31F /* MealGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145B292525DE340082A31F /* MealGridView.swift */; };
 		D7145B322525DF0F0082A31F /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145B312525DF0F0082A31F /* CellView.swift */; };
 		D7145B372525E5590082A31F /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145B362525E5590082A31F /* RecipeView.swift */; };
-		D7145B8B2525F11D0082A31F /* NetworkLayerFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7145B8A2525F11D0082A31F /* NetworkLayerFramework.xcframework */; };
+		D7788875254698BD0072A84E /* NetKit in Frameworks */ = {isa = PBXBuildFile; productRef = D7788874254698BD0072A84E /* NetKit */; };
+		D778887C2546A16D0072A84E /* ImageLoader in Frameworks */ = {isa = PBXBuildFile; productRef = D778887B2546A16D0072A84E /* ImageLoader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,12 +94,10 @@
 		D7145AF52525D1240082A31F /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
 		D7145AFA2525D1970082A31F /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
 		D7145AFF2525D21F0082A31F /* RecipeVieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeVieModel.swift; sourceTree = "<group>"; };
-		D7145B042525D3250082A31F /* ImageLoader */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ImageLoader; path = ../Packages/ImageLoader; sourceTree = "<group>"; };
 		D7145B112525D54B0082A31F /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		D7145B292525DE340082A31F /* MealGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealGridView.swift; sourceTree = "<group>"; };
 		D7145B312525DF0F0082A31F /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		D7145B362525E5590082A31F /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
-		D7145B8A2525F11D0082A31F /* NetworkLayerFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NetworkLayerFramework.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7145B1A2525D6460082A31F /* ImageLoader in Frameworks */,
-				D7145B8B2525F11D0082A31F /* NetworkLayerFramework.xcframework in Frameworks */,
+				D7788875254698BD0072A84E /* NetKit in Frameworks */,
+				D778887C2546A16D0072A84E /* ImageLoader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +130,6 @@
 		D71459DB2525BCE70082A31F = {
 			isa = PBXGroup;
 			children = (
-				D7145B042525D3250082A31F /* ImageLoader */,
-				D7145B622525EED10082A31F /* Frameworks */,
 				D71459E52525BCE70082A31F /* Products */,
 				D71459E62525BCE70082A31F /* RecipeApp */,
 				D71459F82525BCE80082A31F /* RecipeAppTests */,
@@ -264,14 +260,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D7145B622525EED10082A31F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D7145B8A2525F11D0082A31F /* NetworkLayerFramework.xcframework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,7 +278,8 @@
 			);
 			name = RecipeApp;
 			packageProductDependencies = (
-				D7145B192525D6460082A31F /* ImageLoader */,
+				D7788874254698BD0072A84E /* NetKit */,
+				D778887B2546A16D0072A84E /* ImageLoader */,
 			);
 			productName = RecipeApp;
 			productReference = D71459E42525BCE70082A31F /* RecipeApp.app */;
@@ -363,6 +352,10 @@
 				Base,
 			);
 			mainGroup = D71459DB2525BCE70082A31F;
+			packageReferences = (
+				D7788873254698BD0072A84E /* XCRemoteSwiftPackageReference "NetKit" */,
+				D778887A2546A16D0072A84E /* XCRemoteSwiftPackageReference "ImageLoader" */,
+			);
 			productRefGroup = D71459E52525BCE70082A31F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -584,7 +577,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RecipeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = F74ZL5Z8XL;
+				DEVELOPMENT_TEAM = KAS53ZWBFV;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RecipeApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -747,9 +740,34 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		D7788873254698BD0072A84E /* XCRemoteSwiftPackageReference "NetKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/alineOrdonez/NetKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		D778887A2546A16D0072A84E /* XCRemoteSwiftPackageReference "ImageLoader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/alineOrdonez/ImageLoader.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		D7145B192525D6460082A31F /* ImageLoader */ = {
+		D7788874254698BD0072A84E /* NetKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = D7788873254698BD0072A84E /* XCRemoteSwiftPackageReference "NetKit" */;
+			productName = NetKit;
+		};
+		D778887B2546A16D0072A84E /* ImageLoader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D778887A2546A16D0072A84E /* XCRemoteSwiftPackageReference "ImageLoader" */;
 			productName = ImageLoader;
 		};
 /* End XCSwiftPackageProductDependency section */

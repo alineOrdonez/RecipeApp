@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import NetworkLayerFramework
+import NetKit
 
 class RecipeService: Service {
     

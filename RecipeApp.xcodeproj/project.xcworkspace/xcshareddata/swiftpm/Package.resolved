@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ImageLoader",
+        "repositoryURL": "https://gitlab.com/alineOrdonez/ImageLoader.git",
+        "state": {
+          "branch": null,
+          "revision": "7113ef880a1eada9d0931f887a7adac0edc7f1bd",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "NetKit",
+        "repositoryURL": "https://gitlab.com/alineOrdonez/NetKit.git",
+        "state": {
+          "branch": null,
+          "revision": "8e728f1078ada6322925c277e57b3906429a363f",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
