@@ -16,7 +16,7 @@ class RecipeVieModel: ObservableObject {
     
     // MARK: - Methods
     func filterRecipesBy(id: String) {
-        service.getRecipeBy(id) { result in
+        service.fetchData(params: id, responseType: RecipeList.self) { result in
             switch result {
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")

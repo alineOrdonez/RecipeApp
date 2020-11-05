@@ -10,12 +10,16 @@ import Foundation
 class CategoryListViewModel: ObservableObject {
     
     // MARK: - Properties
-    private let service = RecipeService()
+    private let service: ServiceProtocol
     @Published var list: [Category]?
+    
+    init(service: ServiceProtocol = CategoryService()) {
+        self.service = service
+    }
     
     // MARK: - Methods
     func getAllCategories() {
-        service.getCategories { result in
+        service.fetchData(params: nil, responseType: CategoryList.self) { result in
             switch result {
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")

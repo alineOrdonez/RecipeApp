@@ -1,14 +1,14 @@
 //
-//  RecipeService.swift
+//  CategoryService.swift
 //  RecipeApp
 //
-//  Created by Aline Arely Ordonez Garcia on 01/10/20.
+//  Created by Aline Arely Ordonez Garcia on 03/10/20.
 //
 
 import Foundation
 import NetKit
 
-class RecipeService: ServiceProtocol {
+class CategoryService: ServiceProtocol {
     
     var networkManager: NetworkProtocol
     
@@ -17,8 +17,7 @@ class RecipeService: ServiceProtocol {
     }
     
     func fetchData<T: Decodable>(params: String?, responseType: T.Type, completion: @escaping (Result<T>) -> Void) {
-        let string = "i=\(params!)"
-        let request = RecipeRequest(path: "lookup", search: string)
+        let request = RecipeRequest(path: "categories")
         networkManager.executeRequest(request, completion: completion)
     }
 }

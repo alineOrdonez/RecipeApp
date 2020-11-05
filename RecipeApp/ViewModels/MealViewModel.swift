@@ -10,12 +10,17 @@ import Foundation
 class MealViewModel: ObservableObject {
     
     // MARK: - Properties
-    private let service = RecipeService()
+    private let service: ServiceProtocol
     @Published var list: [Meal]?
+    
+    init(service: ServiceProtocol = MealService()) {
+        self.service = service
+    }
     
     // MARK: - Methods
     func filterRecipesBy(_ type: FilterType, word: String) {
-        service.filterRecipes(type, search: word) { result in
+        let string = "\(type.rawValue)=\(word)"
+        service.fetchData(params: string, responseType: MealList.self) { result in
             switch result {
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")

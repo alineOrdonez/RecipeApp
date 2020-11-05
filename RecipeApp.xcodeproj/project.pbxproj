@@ -32,8 +32,19 @@
 		D7145B2A2525DE340082A31F /* MealGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145B292525DE340082A31F /* MealGridView.swift */; };
 		D7145B322525DF0F0082A31F /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145B312525DF0F0082A31F /* CellView.swift */; };
 		D7145B372525E5590082A31F /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7145B362525E5590082A31F /* RecipeView.swift */; };
-		D7788875254698BD0072A84E /* NetKit in Frameworks */ = {isa = PBXBuildFile; productRef = D7788874254698BD0072A84E /* NetKit */; };
 		D778887C2546A16D0072A84E /* ImageLoader in Frameworks */ = {isa = PBXBuildFile; productRef = D778887B2546A16D0072A84E /* ImageLoader */; };
+		D7BE9AE72553950000FC7317 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE9AE62553950000FC7317 /* ServiceProtocol.swift */; };
+		D7BE9AEC2553965900FC7317 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE9AEB2553965900FC7317 /* MockNetworkManager.swift */; };
+		D7BE9B152553BFCF00FC7317 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = D7BE9B142553BFCF00FC7317 /* categories.json */; };
+		D7BE9B242553C07800FC7317 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE9B232553C07800FC7317 /* MockRequest.swift */; };
+		D7BE9B2C2553C0EB00FC7317 /* NetKit in Frameworks */ = {isa = PBXBuildFile; productRef = D7BE9B2B2553C0EB00FC7317 /* NetKit */; };
+		D7BE9B3B2553C7EB00FC7317 /* CountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE9B3A2553C7EB00FC7317 /* CountryService.swift */; };
+		D7BE9B3F2553C83D00FC7317 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BE9B3E2553C83D00FC7317 /* MealService.swift */; };
+		D7EF1739254F83F300CBCFEE /* ServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EF1738254F83F300CBCFEE /* ServiceTest.swift */; };
+		D7EF178A2550ED6800CBCFEE /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EF17892550ED6800CBCFEE /* TestError.swift */; };
+		D7EF17902550EDE700CBCFEE /* TestServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EF178F2550EDE700CBCFEE /* TestServer.swift */; };
+		D7EF17942551149C00CBCFEE /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EF17932551149C00CBCFEE /* MockService.swift */; };
+		D7EF17E72551539A00CBCFEE /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EF17E62551539A00CBCFEE /* CategoryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +109,17 @@
 		D7145B292525DE340082A31F /* MealGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealGridView.swift; sourceTree = "<group>"; };
 		D7145B312525DF0F0082A31F /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		D7145B362525E5590082A31F /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		D7BE9AE62553950000FC7317 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		D7BE9AEB2553965900FC7317 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		D7BE9B142553BFCF00FC7317 /* categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
+		D7BE9B232553C07800FC7317 /* MockRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
+		D7BE9B3A2553C7EB00FC7317 /* CountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryService.swift; sourceTree = "<group>"; };
+		D7BE9B3E2553C83D00FC7317 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
+		D7EF1738254F83F300CBCFEE /* ServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTest.swift; sourceTree = "<group>"; };
+		D7EF17892550ED6800CBCFEE /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		D7EF178F2550EDE700CBCFEE /* TestServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestServer.swift; sourceTree = "<group>"; };
+		D7EF17932551149C00CBCFEE /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		D7EF17E62551539A00CBCFEE /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7788875254698BD0072A84E /* NetKit in Frameworks */,
 				D778887C2546A16D0072A84E /* ImageLoader in Frameworks */,
+				D7BE9B2C2553C0EB00FC7317 /* NetKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +156,7 @@
 				D71459E62525BCE70082A31F /* RecipeApp */,
 				D71459F82525BCE80082A31F /* RecipeAppTests */,
 				D7145A032525BCE80082A31F /* RecipeAppUITests */,
+				D7EF17A3255130DC00CBCFEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,7 +198,10 @@
 		D71459F82525BCE80082A31F /* RecipeAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				D71459F92525BCE80082A31F /* RecipeAppTests.swift */,
+				D7BE9B372553C75200FC7317 /* Tests */,
+				D7BE9B1A2553C01300FC7317 /* Network */,
+				D7BE9B132553BFAA00FC7317 /* JSON Files */,
+				D7EF17882550ED5600CBCFEE /* Utility */,
 				D71459FB2525BCE80082A31F /* Info.plist */,
 			);
 			path = RecipeAppTests;
@@ -218,6 +244,10 @@
 			children = (
 				D7145AA72525C6650082A31F /* Service.swift */,
 				D7145ABF2525C8EB0082A31F /* RecipeService.swift */,
+				D7EF17E62551539A00CBCFEE /* CategoryService.swift */,
+				D7BE9AE62553950000FC7317 /* ServiceProtocol.swift */,
+				D7BE9B3A2553C7EB00FC7317 /* CountryService.swift */,
+				D7BE9B3E2553C83D00FC7317 /* MealService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -260,6 +290,49 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D7BE9B132553BFAA00FC7317 /* JSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE9B142553BFCF00FC7317 /* categories.json */,
+			);
+			path = "JSON Files";
+			sourceTree = "<group>";
+		};
+		D7BE9B1A2553C01300FC7317 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D7BE9B232553C07800FC7317 /* MockRequest.swift */,
+				D7EF17932551149C00CBCFEE /* MockService.swift */,
+				D7BE9AEB2553965900FC7317 /* MockNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D7BE9B372553C75200FC7317 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D7EF1738254F83F300CBCFEE /* ServiceTest.swift */,
+				D71459F92525BCE80082A31F /* RecipeAppTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D7EF17882550ED5600CBCFEE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D7EF17892550ED6800CBCFEE /* TestError.swift */,
+				D7EF178F2550EDE700CBCFEE /* TestServer.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D7EF17A3255130DC00CBCFEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,8 +351,8 @@
 			);
 			name = RecipeApp;
 			packageProductDependencies = (
-				D7788874254698BD0072A84E /* NetKit */,
 				D778887B2546A16D0072A84E /* ImageLoader */,
+				D7BE9B2B2553C0EB00FC7317 /* NetKit */,
 			);
 			productName = RecipeApp;
 			productReference = D71459E42525BCE70082A31F /* RecipeApp.app */;
@@ -381,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7BE9B152553BFCF00FC7317 /* categories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,13 +475,17 @@
 				D7145AD52525CB2A0082A31F /* String+Extension.swift in Sources */,
 				D7145AA82525C6650082A31F /* Service.swift in Sources */,
 				D71459EA2525BCE80082A31F /* ContentView.swift in Sources */,
+				D7EF17E72551539A00CBCFEE /* CategoryService.swift in Sources */,
 				D7145B002525D21F0082A31F /* RecipeVieModel.swift in Sources */,
+				D7BE9AE72553950000FC7317 /* ServiceProtocol.swift in Sources */,
 				D7145AF62525D1240082A31F /* CountryListViewModel.swift in Sources */,
 				D7145B2A2525DE340082A31F /* MealGridView.swift in Sources */,
 				D7145B122525D54B0082A31F /* RoundedView.swift in Sources */,
 				D7145AC02525C8EB0082A31F /* RecipeService.swift in Sources */,
 				D7145ACC2525CA8E0082A31F /* Enums.swift in Sources */,
+				D7BE9B3F2553C83D00FC7317 /* MealService.swift in Sources */,
 				D7145AE92525CBFB0082A31F /* Meal.swift in Sources */,
+				D7BE9B3B2553C7EB00FC7317 /* CountryService.swift in Sources */,
 				D71459E82525BCE80082A31F /* RecipeApp.swift in Sources */,
 				D7145A272525BD640082A31F /* CategoryListView.swift in Sources */,
 				D7145AFB2525D1970082A31F /* MealViewModel.swift in Sources */,
@@ -426,7 +504,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7EF178A2550ED6800CBCFEE /* TestError.swift in Sources */,
+				D7BE9B242553C07800FC7317 /* MockRequest.swift in Sources */,
+				D7EF17902550EDE700CBCFEE /* TestServer.swift in Sources */,
+				D7BE9AEC2553965900FC7317 /* MockNetworkManager.swift in Sources */,
+				D7EF1739254F83F300CBCFEE /* ServiceTest.swift in Sources */,
 				D71459FA2525BCE80082A31F /* RecipeAppTests.swift in Sources */,
+				D7EF17942551149C00CBCFEE /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,29 +830,29 @@
 			repositoryURL = "https://gitlab.com/alineOrdonez/NetKit.git";
 			requirement = {
 				kind = exactVersion;
-				version = 1.0.0;
+				version = 1.0.2;
 			};
 		};
 		D778887A2546A16D0072A84E /* XCRemoteSwiftPackageReference "ImageLoader" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://gitlab.com/alineOrdonez/ImageLoader.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				kind = exactVersion;
+				version = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D7788874254698BD0072A84E /* NetKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D7788873254698BD0072A84E /* XCRemoteSwiftPackageReference "NetKit" */;
-			productName = NetKit;
-		};
 		D778887B2546A16D0072A84E /* ImageLoader */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D778887A2546A16D0072A84E /* XCRemoteSwiftPackageReference "ImageLoader" */;
 			productName = ImageLoader;
+		};
+		D7BE9B2B2553C0EB00FC7317 /* NetKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7788873254698BD0072A84E /* XCRemoteSwiftPackageReference "NetKit" */;
+			productName = NetKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

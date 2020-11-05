@@ -15,7 +15,6 @@ struct RecipeView: View {
     var id: String
     var name: String
     
-    
     var body: some View {
         ScrollView(.vertical) {
             if let recipe = viewModel.recipe, recipe.image.isValidURL() {

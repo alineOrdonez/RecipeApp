@@ -10,12 +10,16 @@ import Foundation
 class CountryListViewModel: ObservableObject {
     
     // MARK: - Properties
-    private let service = RecipeService()
+    private let service:ServiceProtocol
     @Published var list: [Area]?
+    
+    init(service: ServiceProtocol = CountryService()) {
+        self.service = service
+    }
     
     // MARK: - Methods
     func getAllAreas() {
-        service.getAreas { result in
+        service.fetchData(params: nil, responseType: AreaList.self) { result in
             switch result {
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
